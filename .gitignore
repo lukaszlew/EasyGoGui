@@ -1,4 +1,6 @@
 build
+external/docbook/docbook-xsl-1.68.1
+external/quaqua/Quaqua
 lib
 TAGS
-
+*~
