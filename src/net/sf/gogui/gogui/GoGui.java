@@ -1192,15 +1192,15 @@ public class GoGui
             return;
         if (! synchronizeProgram())
             return;
-        if (! isSingleMove && ! isComputerBoth())
-        {
-            m_computerBlack = false;
-            m_computerWhite = false;
-            if (getToMove() == BLACK)
-                m_computerBlack = true;
-            else
-                m_computerWhite = true;
-        }
+        // if (! isSingleMove && ! isComputerBoth())
+        // {
+        //     m_computerBlack = false;
+        //     m_computerWhite = false;
+        //     if (getToMove() == BLACK)
+        //         m_computerBlack = true;
+        //     else
+        //         m_computerWhite = true;
+        // }
         generateMove(isSingleMove);
         m_game.startClock();
     }
