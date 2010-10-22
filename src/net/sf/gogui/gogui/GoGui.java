@@ -3905,23 +3905,23 @@ public class GoGui
     private void setMinimumSize()
     {
         int width = 128;
-        int height = 32;
-        Insets rootInsets = getRootPane().getInsets();
-        int rootInsetsWidth = rootInsets.left + rootInsets.right;
-        Dimension menuBarSize = getJMenuBar().getPreferredSize();
-        width = Math.max(width, (int)menuBarSize.getWidth() + rootInsetsWidth);
-        height = Math.max(height, (int)menuBarSize.getHeight());
-        if (m_showToolbar)
-        {
-            Insets contentInsets = getContentPane().getInsets();
-            int contentInsetsWidth = contentInsets.left + contentInsets.right;
-            Dimension toolBarSize = m_toolBar.getPreferredSize();
-            width = Math.max(width,
-                             (int)toolBarSize.getWidth() + rootInsetsWidth
-                             + contentInsetsWidth + GuiUtil.PAD);
-            height += (int)toolBarSize.getHeight();
-        }
-        height += 224;
+        int height = 160;
+        // Insets rootInsets = getRootPane().getInsets();
+        // int rootInsetsWidth = rootInsets.left + rootInsets.right;
+        // Dimension menuBarSize = getJMenuBar().getPreferredSize();
+        // width = Math.max(width, (int)menuBarSize.getWidth() + rootInsetsWidth);
+        // height = Math.max(height, (int)menuBarSize.getHeight());
+        // if (m_showToolbar)
+        // {
+        //     Insets contentInsets = getContentPane().getInsets();
+        //     int contentInsetsWidth = contentInsets.left + contentInsets.right;
+        //     Dimension toolBarSize = m_toolBar.getPreferredSize();
+        //     width = Math.max(width,
+        //                      (int)toolBarSize.getWidth() + rootInsetsWidth
+        //                      + contentInsetsWidth + GuiUtil.PAD);
+        //     height += (int)toolBarSize.getHeight();
+        // }
+        // height += 224;
         setMinimumSize(new Dimension(width, height));
     }
 
