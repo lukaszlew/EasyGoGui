@@ -205,6 +205,16 @@ public class GoGuiActions
             public void actionPerformed(ActionEvent e) {
                 m_goGui.actionClockStart(); } };
 
+    public final Action m_actionToggleComputerColorBlack =
+        new Action("ACT_COMPUTER_PLAYS_BLACK") {
+            public void actionPerformed(ActionEvent e) {
+                m_goGui.actionToggleComputerColorBlack(); } };
+
+    public final Action m_actionToggleComputerColorWhite =
+        new Action("ACT_COMPUTER_PLAYS_WHITE") {
+            public void actionPerformed(ActionEvent e) {
+                m_goGui.actionToggleComputerColorWhite(); } };
+
     public final Action m_actionComputerBlack =
         new Action("ACT_COMPUTER_BLACK") {
             public void actionPerformed(ActionEvent e) {
@@ -766,6 +776,10 @@ public class GoGuiActions
         updateClockResume(clock);
         updateClockStart(clock);
         updateSetTimeLeft(clock);
+	m_actionToggleComputerColorBlack.setEnabled(isProgramAttached);
+        m_actionToggleComputerColorBlack.setSelected(computerBlack);
+	m_actionToggleComputerColorWhite.setEnabled(isProgramAttached);
+        m_actionToggleComputerColorWhite.setSelected(computerWhite);
         m_actionComputerBlack.setEnabled(isProgramAttached);
         m_actionComputerBlack.setSelected(computerBlack && ! computerWhite);
         m_actionComputerBoth.setEnabled(isProgramAttached);

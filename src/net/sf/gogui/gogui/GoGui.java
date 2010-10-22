@@ -418,6 +418,16 @@ public class GoGui
         updateViews(false);
     }
 
+    public void actionToggleComputerColorBlack()
+    {
+	actionComputerColor(!m_computerBlack, m_computerWhite);
+    }
+
+    public void actionToggleComputerColorWhite()
+    {
+	actionComputerColor(m_computerBlack, !m_computerWhite);
+    }
+
     public void actionComputerColor(boolean isBlack, boolean isWhite)
     {
         boolean computerNone = (! isBlack && ! isWhite);

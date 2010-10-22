@@ -381,8 +381,14 @@ public class GoGuiMenuBar
         menu.add(createHandicapMenu(actions));
         menu.addItem(actions.m_actionGameInfo, KeyEvent.VK_G);
         menu.addSeparator();
+        GoGuiCheckBoxMenuItem itemToggleComputerColorBlack =
+            new GoGuiCheckBoxMenuItem(actions.m_actionToggleComputerColorBlack);
+        menu.addItem(itemToggleComputerColorBlack, KeyEvent.VK_B);
+        GoGuiCheckBoxMenuItem itemToggleComputerColorWhite =
+            new GoGuiCheckBoxMenuItem(actions.m_actionToggleComputerColorWhite);
+        menu.addItem(itemToggleComputerColorWhite, KeyEvent.VK_W);
         m_computerColor = createComputerColorMenu(actions);
-        menu.add(m_computerColor);
+        // menu.add(m_computerColor);
         menu.addSeparator();
         menu.addItem(actions.m_actionPass, KeyEvent.VK_P);
         menu.add(createClockMenu(actions));
