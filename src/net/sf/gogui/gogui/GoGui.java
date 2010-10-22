@@ -3395,10 +3395,8 @@ public class GoGui
             newGame(getBoardSize());
         else
             newGameFile(getBoardSize(), m_move);
-        if (! m_prefs.getBoolean("show-info-panel", true))
-            showInfoPanel(true);
-        if (m_prefs.getBoolean("show-toolbar", true))
-            showToolbar(true);
+	showInfoPanel(m_prefs.getBoolean("show-info-panel", true));
+	showToolbar(m_prefs.getBoolean("show-toolbar", true));
         restoreMainWindow(getBoardSize());
         // Attaching a program can take some time, so we want to make
         // the window visible, but not draw the window content yet
