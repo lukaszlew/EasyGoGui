@@ -290,7 +290,7 @@ public final class AnalyzeDialog
                 public void mouseClicked(MouseEvent e) {
                     int modifiers = e.getModifiers();
                     int mask = ActionEvent.ALT_MASK;
-                    if (e.getClickCount() == 2
+                    if (e.getClickCount() == 1
                         || ((modifiers & mask) != 0))
                     {
                         //int index =
