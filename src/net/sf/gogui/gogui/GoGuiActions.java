@@ -206,12 +206,12 @@ public class GoGuiActions
                 m_goGui.actionClockStart(); } };
 
     public final Action m_actionToggleComputerColorBlack =
-        new Action("ACT_COMPUTER_PLAYS_BLACK") {
+        new Action("ACT_COMPUTER_PLAYS_BLACK", null, "gogui-computer-black") {
             public void actionPerformed(ActionEvent e) {
                 m_goGui.actionToggleComputerColorBlack(); } };
 
     public final Action m_actionToggleComputerColorWhite =
-        new Action("ACT_COMPUTER_PLAYS_WHITE") {
+        new Action("ACT_COMPUTER_PLAYS_WHITE", null, "gogui-computer-white") {
             public void actionPerformed(ActionEvent e) {
                 m_goGui.actionToggleComputerColorWhite(); } };
 

@@ -33,6 +33,9 @@ public class GoGuiToolBar
         addToggleButton(actions.m_actionSetupBlack);
         addToggleButton(actions.m_actionSetupWhite);
         addSeparator();
+        addToggleButton(actions.m_actionToggleComputerColorBlack);
+        addToggleButton(actions.m_actionToggleComputerColorWhite);
+        addSeparator();
         addButton(actions.m_actionBeginning);
         addButton(actions.m_actionBackwardTen);
         addButton(actions.m_actionBackward);
